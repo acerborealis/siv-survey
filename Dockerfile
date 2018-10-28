@@ -33,13 +33,13 @@ RUN wget https://jdbc.postgresql.org/download/postgresql-9.4.1209.jre7.jar && \
     mv postgresql-9.4.1209.jre7.jar ${CATALINA_HOME}/lib/
 
 # ODK Aggregate WAR archive
-RUN wget https://github.com/acerborealis/siv-survey/blob/master/ODKAggregate.war
+RUN wget https://github.com/acerborealis/siv-survey/raw/master/ODKAggregate.war
     
 # create_tomcat_admin_user.sh
-RUN wget https://github.com/acerborealis/siv-survey/blob/master/create_tomcat_admin_user.sh 
+RUN wget https://github.com/acerborealis/siv-survey/raw/master/create_tomcat_admin_user.sh
 
 # run.sh
-RUN wget https://github.com/acerborealis/siv-survey/blob/master/run.sh
+RUN wget https://github.com/acerborealis/siv-survey/raw/master/run.sh
 
 RUN chmod +x /*.sh
 
